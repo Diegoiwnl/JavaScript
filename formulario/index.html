@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet">
+    
+</head>
+<body>
+    
+    <form onsubmit="return validarformulario()">
+        <h1>Ingresa tus datos</h1>
+        <label>Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingresa nombre del jugador">
+        <label>Apellido:</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Ingresa apellido del jugador">
+        <label>Usuario:</label>
+        <input type="text" id="usuario" name="usuario" placeholder="Ingresa usuario del jugador">
+        <label>Email:</label>
+        <input type="email" id="email" name="email" placeholder="Ingresa email del jugador">
+        <label>Contraseña:</label>
+        <input type="password" id="password" name="password" placeholder="Ingresa contraseña del jugador">
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+    <script src="/formulario/js/validar.js"></script>
+</html>
