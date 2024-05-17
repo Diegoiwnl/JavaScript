@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='listasongs.css')}}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" >
+        <table>
+            <tr>
+                
+                <th>Titulo</th>
+                <th>Artista</th>
+                <th>Genero</th>
+                <th>Precio</th> 
+                <th>Duracion</th>
+                <th>Lanzamiento</th>
+                <th>Imágen</th>
+                <th>Acciones<th>
+                
+            </tr>
+            <a class="registrar" href="/Registro">Registrar cancion</a>
+            
+
+
+
+            <a class="inicio" href="/">Inicio</a>
+                <tbody>
+                    {% for cancionuwu in cancion %}
+                <tr>
+             
+                    <td>{{cancionuwu.Titulo }}</td>
+                    <td>{{cancionuwu.Artista }}</td>
+                    <td>{{cancionuwu.Genero }}</td>
+                    <td>{{cancionuwu.Precio }}</td>
+                    <td>{{cancionuwu.Duracion }}</td>
+                    <td>{{cancionuwu.Lanzamiento }}</td>
+                    <td><img src="data:image/jpeg;base64, {{ cancionuwu.Imagen }}" alt="No se encuentra imagen" width="100"></td>
+                    <td>
+                    <a href="{{ url_for('editar_cancion', id=cancionuwu.id_can) }}">Editar</a>
+                    <a href="{{ url_for('eliminar_cancion', id=cancionuwu.id_can) }}">Eliminar</a>
+                    </td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            
+        </table>
+    
+    </div>
+</body>
+</html>
