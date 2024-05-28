@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='logeo.css') }}">
+</head>
+<!-- <img src="{{ url_for('static', filename='img/boy.jpg') }}" alt="Logo" class="logo"> -->
+<body>
+    <div class="glass-effect">
+    <form action="{{ url_for('login') }}" method="POST">
+        <h1 class="title">Inicio de sesión</h1>
+        <label>Usuario</label>
+        <input type="text" placeholder="Ingrese su usuario" required name="txtusuario">
+        <label>Contraseña</label>
+        <input type="password" placeholder="Ingrese su contraseña" required name="txtcontrasena">
+        <label>Ingresar</label>
+        <input type="submit">
+        <label>¿No tienes una cuenta?</label>
+        <a class="link" href="/Registrar">Registrate</a>
+        
+    </div>
+    </form>
+    
+</body>
+</html>

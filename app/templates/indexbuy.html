@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <div class="containerbuy">
+        <h1>Bienvenid@, {{ session['usuario'] }}</h1>
+        <p>Inicio de sesion correctamente</p>
+        <a class="cerrar" href="/logout">Cerrar sesión</a>
+        <a class="listar" href="/listarbuy">Lista de canciones</a>
+        <a class="registrar" href="/carrito">Carrito</a>
+  
+    </div>
+ 
+</body>
+</html>

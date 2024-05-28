@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='listasongs.css')}}">
+    <title>Document</title>
+    <a class="carrito" href="/carrito">Carrito</a>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='js/carrito.js') }}"></script>
+</head>
+<body>
+    <div class="container" >
+        <table>
+            <a class="inicio" href="/indexb">Inicio</a>
+            <tr>
+                <th>ID</th>
+                <th>Titulo</th>
+                <th>Artista</th>
+                <th>Genero</th>
+                <th>Precio</th> 
+                <th>Duracion</th>
+                <th>Lanzamiento</th>
+                <th>Imágen</th>
+                <th>Acciones<th>
+            </tr>
+                <tbody>
+                    {% for cancionuwu in cancion %}
+                <tr>
+                    <td>{{cancionuwu.id_can }}</td>
+                    <td>{{cancionuwu.Titulo }}</td>
+                    <td>{{cancionuwu.Artista }}</td>
+                    <td>{{cancionuwu.Genero }}</td>
+                    <td>{{cancionuwu.Precio }}</td>
+                    <td>{{cancionuwu.Duracion }}</td>
+                    <td>{{cancionuwu.Lanzamiento }}</td>
+                    <td><img src="data:image/jpeg;base64, {{ cancionuwu.Imagen }}" alt="No se encuentra imagen" width="100"></td>
+                    <td>
+                       <button class="add-to-cart" data-id="{{ cancionuwu.id_can }}"
+                                                  data-titulo="{{ cancionuwu.Titulo }}"
+                                                  data-precio="{{ cancionuwu.Precio }}"  >Agregar al carrito</button>
+                    </td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            
+        </table>
+    
+    </div>
+</body>
+</html>

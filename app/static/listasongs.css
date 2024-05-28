@@ -1,0 +1,93 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Fondo gris claro */
+    color: #333333; /* Texto negro */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar el contenedor horizontalmente */
+    padding: 20px; /* Espaciado interno */
+}
+
+table {
+    width: 100%; /* Ancho de la tabla al 100% del contenedor */
+    border-collapse: separate; /* Colapsar los bordes de la tabla */
+    border-spacing: 0 10px; /* Espaciado entre las filas */
+}
+
+th, td {
+    padding: 12px; /* Relleno */
+    text-align: left; /* Alinear el texto a la izquierda */
+    border-bottom: 1px solid #ddd; /* Borde inferior gris */
+}
+
+th {
+    background-color: #f2f2f2; /* Fondo gris claro para las celdas de encabezado */
+}
+
+td img {
+    max-width: 80px; /* Ancho máximo de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+    border-radius: 5px; /* Borde redondeado para las imágenes */
+}
+
+td a {
+    text-decoration: none; /* Quitar subrayado de enlaces */
+    color: #007bff; /* Color azul para los enlaces */
+    margin-right: 10px; /* Espaciado derecho entre enlaces */
+}
+
+td a:hover {
+    text-decoration: underline; /* Subrayar enlaces al pasar el cursor */
+}
+
+td:first-child {
+    max-width: 100px; /* Ejemplo: Ancho máximo de la primera columna */
+    overflow: hidden; /* Ocultar el contenido que desborda */
+    text-overflow: ellipsis; /* Mostrar puntos suspensivos (...) si el contenido es demasiado largo */
+    white-space: nowrap; /* Evitar saltos de línea */
+}
+
+
+.inicio{
+    background-color: hwb(180 38% 18%);
+    color: #333333;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    display: inline-block;
+    margin-left: 10px;
+
+}
+
+.registrar{
+    background-color: hwb(180 38% 18%);
+    color: #333333;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    display: inline-block;
+    
+
+}
+
+.carrito{
+    background-color: hwb(180 38% 18%);
+    color: #333333;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+
+}
