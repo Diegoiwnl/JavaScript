@@ -74,7 +74,7 @@ input[type="submit"]:hover {
     width: 120px;
 }
 
-.cerrar,.listar,.registrar{
+.cerrar,.listar,.registrar {
     background-color: #0099ff;
     color: #333333;
     padding: 10px;
@@ -128,3 +128,14 @@ input[type="submit"]:hover {
     margin-top: 200px;
 }
 
+.index{
+    background-color: #0099ff;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    display: inline-block;
+}

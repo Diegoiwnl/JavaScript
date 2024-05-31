@@ -40,7 +40,7 @@ def login():
             if usuario[2] == 'Administrador':
                 return redirect(url_for('lista'))
             else:
-                return redirect(url_for('listarbuy'))
+                return redirect(url_for('index_comprador'))
         else:
             print('credenciales invalidas')
             flash('Credenciales inválidas, por favor inténtalo de nuevo', 'error')
